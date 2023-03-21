@@ -124,6 +124,7 @@ Zoom the map frame to the country layer and export the map to a 2956 width by 17
 For each variable's time series, either eyeball the highest and lowest values from the corresponding plot, or sort the time series dataframe to find out the highest and lowest values.
 THen, use ArcGIS Pro's "Make Multidimensional Raster Layer" tool to create raster files for the corresponding time period for `spei12` and `spei48`, so that they can be used directly for mapping.
 Then, use the drought variables' map templates to create two maps for each variable and export to PNGs.
+1. Upload `./maps`, `./plots`, and `./stats` to a shared folder and share them with colleagues, who will use these inputs to assemble the UCRA report.
 
 ## Contact
 
