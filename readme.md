@@ -22,7 +22,7 @@ The Jupyter Notebooks are numbered to roughly indicate their sequencing in the d
 - The 50s notebooks are for data sharing, as requested by task teams, or any post-delivery analytical follow-up.
 
 Technically, the 10s - 30s notebooks can be run in any order, since they are mutually independent.
-However, they are organized as much to reflect the estimated processing time required.
+However, they are organized as such to reflect the estimated processing time required.
 The 10s notebooks may take longer to run and should ideally be started earlier, and the 20s and 30s notebooks can be run while the 10s notebooks are under way.
 
 ### R Scripts
@@ -83,8 +83,10 @@ In the Jupyter Notebooks, where the raw data are read and processed, update the 
 
 ## Steps
 
-These are all the steps required to produce a full UCRA report, not just the data processing component.
-Therefore, some of the steps involve tools and resources beyond this repo.
+These are all the steps required to provide comprehensive inputs to a full UCRA report, not just the data processing component.
+Therefore, some of the steps involve tools and resources beyond this repo.  
+
+**It is crucial to follow the steps closely, as the codes are designed to run seamlessly within a rigid file structure and setup.**
 
 1. Create a directory named after the country of interest (e.g., "DRC", "Sri Lanka"). This will be the working directory of the repo.
 1. Clone the repo into the working directory. All the notebooks and scripts should be in the working directory with no subdirectories.
@@ -105,7 +107,7 @@ First, the air quality map has incorrect binnings: there should be 8 bins, as li
 Second, the landslide map's legend needs to be formatted to show 3 significant digits (or more if necessary).
 1. While the toolbox is running, run the 40s notebooks.
 Note that 41_stats_arcpy needs to be run in the ArcGIS Pro project (or another arcpy environment).
-1. Once the toolbox finishes running, run step 9 of 00_setup notebook and run any parts of the 50_share_data notebook as needed, thereby concluding the Python portion of the analysis.
+1. Once the toolbox finishes running, run step 9 of 00_setup notebook and run the "Share maps" and "Share stats" parts of the 50_share_data notebook. If the team asks for raw data, then also run the "Share data files" part, though pay attention to data agreements and avoid sharing proprietary data without permission. This concludes the Python portion of the analysis.
 1. Create an R project and run each thematic R script as needed.
 Note that for the two flood scripts, `flood_csv_processing.R` needs to be run prior to `flood_calc_and_plot.R`.
 1. Finally, some miscellaneous mapping. 
