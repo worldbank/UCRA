@@ -36,7 +36,6 @@ Before commencing the data processing for any country, have the following global
 - Global 1-km Downscaled Urban Land Extent Projection and Base Year Grids by SSP Scenarios, v1 (2000 – 2100) 
     - https://sedac.ciesin.columbia.edu/data/set/ssp-1-km-downscaled-urban-land-extent-projection-base-year-ssp-2000-2100
     - Download GeoTIFF for the SSPs selected for the UCRA
-- Climate Central sea level rise v1
 - Climate Change Knowledge Portal
     - https://climateknowledgeportal.worldbank.org/country/congo-dem-rep/climate-data-projections
     - The standard set of variables include:
@@ -54,6 +53,7 @@ Before commencing the data processing for any country, have the following global
     - Download for the SSPs and time period(s) selected for the UCRA
     - The "model" selection should always be Multi-Model Ensemble, unless agreed on otherwise with the task team
     - For "calculation", download both "mean" and "anomaly" values whenever possible
+- Fathom 3.0
 - Global SPEI database
     - https://spei.csic.es/spei_database/#map_name=spei01#map_position=1451
     - Download NC (NetCDF) for the following time-scales: spei01, spei12, and spei48
